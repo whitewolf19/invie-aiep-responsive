@@ -409,20 +409,47 @@ input:focus, textarea:focus {
   }
   /* Guitarras */
 }
-@media screen and (max-width: 800px) {
-  /* Cambiando los estilos de la portada */
-  .titulo {
-    font-size: 45px;
-    margin-top: 30px;
-  }
-  .title-a{
-    font-size: 18px;
-  }
-  .portada{
-    height: auto;
-  }
-  .portada .button {
-    margin-bottom: 30px;
-    display: inline-block;
-  }
-}
+/* Optimización para el menú en pantallas de max 600 px*/
+ -@media screen and (max-width:600px) {
+ +@media screen and (max-width: 767px){
+ +  /* Footer */
+ +  .footer .contenedor {
+ +    display: block;
+ +  }
+ +  .contacto {
+ +    margin: 0 auto;
+ +  }
+ +  .formulario {
+ +    display: block;
+ +    margin: 0 auto;
+ +    width: 300px;
+ +  }
+ +  .intereses label {
+ +    display: block;
+ +    font-size: 16px;
+ +  }
+ +  .col1 {
+ +    margin: 0;
+ +  }
+ +  /* Selector de atributo */
+ +  input[type="text"],
+ +  input[type="email"] {
+ +    font-size: 16px;
+ +    padding: 5px;
+ +  }
+ +  textarea {
+ +    width: 100%;
+ +  }
+ +
+ +  input[type="radio"],
+ +  input[type="checkbox"] {
+ +    zoom: 1.5;
+ +  }
+ +  /* Footer */
+ +}
+ +
+ +/* Optimización para el menú en pantallas de max 65s0 px*/
+ +@media screen and (max-width:650px) {
+    .header {
+      text-align: center;
+    }
